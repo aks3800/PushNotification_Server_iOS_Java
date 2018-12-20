@@ -1,0 +1,40 @@
+Payload for simple Push Notification
+
+{
+  "aps": {
+    "alert" : {
+      "body" : "Push Noti Body",
+      "title" : "Push Noti Title",
+      "subtitle" : "Push Noti SubTitle"
+      },
+    "badge" : 1,
+    "sound":"default",
+    },
+  "notificationId" : "",
+  "extra_app_data": { 
+    <extra configuration data object to be sent to device>
+  }
+}
+
+Payload for Rich Push Notification
+
+{
+  "aps": {
+    "alert" : {
+      "body" : "Push Noti Body",
+      "title" : "Push Noti Title",
+      "subtitle" : "Push Noti SubTitle"
+      },
+    "badge" : 1,
+    "sound":"default",
+    "mutable-content":1,
+    "content-available":1
+    },
+  "media-url":"<media-url>",
+  "notificationId" : "",
+  "extra_app_data": { 
+    <extra configuration data object to be sent to device>
+  }
+}
+
+<media-url> : Can be a URL of Image, Video or GIF.
